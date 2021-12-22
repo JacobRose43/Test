@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+* {
+	font-family: "Baloo 2", cursive;
+}
+
+.container {
+	text-align: center;
+}
+
+.datainput {
+	height: 25px;
+	width: 360px;
+}
+
+.title {
+	font-size: 32px;
+	margin: 5px 0 15px 0;
+}
+
+.datainput {
+	font-size: 12px;
+	border: none;
+	border-bottom: 0.5px solid black;
+}
+
+.datainput:focus {
+	outline: none;
+}
+
+.submit {
+	height: 25px;
+	margin-left: 25px;
+	font-size: 16px;
+}
+
+ul {
+	list-style: none;
+}
+
+.task {
+	padding: 30px 8px 30px 8px;
+	position: relative;
+	border-bottom: 1px solid black;
+}
+
+.list_container {
+	position: absolute;
+	right: 0;
+	padding-right: 30px;
+}
