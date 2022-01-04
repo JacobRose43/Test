@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+body {
+	background: black;
+	cursor: none;
+}
+
+.left-text {
+	user-select: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	height: 600px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 75px 0 75px 75px;
+}
+
+.left-text > p {
+	margin: 0;
+}
+
+p:nth-child(1),
+p:nth-child(2),
+p:nth-child(3),
+p:nth-child(4),
+p:nth-child(5) {
+	color: transparent;
+	text-shadow: 0 0 20px rgb(255, 255, 255);
+	transition: 0.5s;
+}
+
+.inner-cursor {
+	position: fixed;
+	width: 10px;
+	height: 10px;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow {
+	width: 25px;
+	height: 25px;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor {
+	position: fixed;
+	width: 25px;
+	height: 25px;
+	transform: translate(-50%, -50%);
+	border: 1px solid white;
+	mix-blend-mode: difference;
+	border-radius: 5px 0.1s;
+	pointer-events: 0.1ms;
+	transition: 0.1s;
+}
+
+body:active > .outer-cursor {
+	width: 250px;
+	height: 250px;
+}
